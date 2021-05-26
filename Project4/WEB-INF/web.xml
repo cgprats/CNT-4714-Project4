@@ -1,0 +1,24 @@
+<web-app>
+   <!-- General description of your Web application -->
+   <display-name>
+      CNT 4714 Remote Database Manager
+   </display-name>
+   <description>
+      This is the Web application which manages a MySQL database
+   </description>
+<!-- Servlet definitions -->
+   <servlet>
+      <servlet-name>MySQLServlet</servlet-name>
+      <description>
+         A simple servlet that handles MySQL Connections.
+      </description>
+      <servlet-class>
+         MySQLServlet
+      </servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>MySQLServlet</servlet-name>
+      <url-pattern>/MySQLServlet</url-pattern>
+   </servlet-mapping>
+</web-app>
+
